@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoMatch component not found snapshot 1`] = `
+<h2>
+  Página no encontrada
+</h2>
+`;

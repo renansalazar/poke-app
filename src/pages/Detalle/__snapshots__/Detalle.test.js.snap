@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detalle component first call to detail 1`] = `
+<div>
+  <div>
+    Cargando ...
+  </div>
+</div>
+`;

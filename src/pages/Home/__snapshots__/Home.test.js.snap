@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detalle component first call to detail 1`] = `
+<section>
+  <form
+    class="containerBuscador"
+  >
+    <input
+      data-testid="buscadorText"
+      placeholder="Inserte Nombre de Pokemon"
+      type="search"
+      value=""
+    />
+    <button>
+      Buscar
+    </button>
+  </form>
+</section>
+`;
