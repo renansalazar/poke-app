@@ -6,6 +6,8 @@ import Home from './pages/Home'
 import Layout from "./pages/Layout"
 import NoMatch from "./pages/NoMatch"
 import { QueryClientProvider, QueryClient } from 'react-query'
+import { ReactQueryDevtools } from 'react-query/devtools'
+
 const queryClient = new QueryClient()
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
           </Route>
       </Routes>
     </BrowserRouter>
+    <ReactQueryDevtools initialIsOpen={false} />
   </QueryClientProvider>
   )
 }

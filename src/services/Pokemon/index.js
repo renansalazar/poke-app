@@ -9,4 +9,4 @@ export const getPokemones = async ({ pageParam = 0 }) => {
   return { results, count, nextPage: pageParam + 1, totalPages };
 }
 
-export const getPokemon = async (name) => axios(`https://pokeapi.co/api/v2/pokemon/${name}`)
+export const getPokemon = async (name='pikachu') => axios(`https://pokeapi.co/api/v2/pokemon/${name}`)

@@ -3,7 +3,7 @@ import { getPokemon, getPokemones } from "../services/Pokemon";
 
 
 export function usePokemon (keyName='heyItem', name='pikachu') {
-  return useQuery(keyName, ()=>getPokemon(name))
+  return useQuery(keyName, ()=>getPokemon(name), {cacheTime: 1e7})
 }
 
 

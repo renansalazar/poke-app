@@ -6,7 +6,7 @@ const Lista = () => {
 
   const { isLoading, error, data, fetchNextPage } = usePokemones('pokemones')
   if(isLoading){
-    return <div>Loading...</div>
+    return <div id="loading">Loading...</div>
   }
 
   if(error){
