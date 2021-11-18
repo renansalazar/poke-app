@@ -1,0 +1,108 @@
+body{
+  width: 100%;
+  height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  margin: 20px;
+}
+
+header{
+  background: #0bcdff;
+  background: red;
+  padding: 10px; 
+  display: flex;
+  justify-content: center;
+  a{
+    color: rgba(255, 255, 0, 0.918);
+    font-size: 23px;
+    text-decoration: none;
+    transition: all 200ms;
+    &:hover{
+      color: #0bcdff;
+    }
+  }
+  
+}
+.containerLista{
+  .containerLista__content{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 6px;
+    
+    a{
+      color: white;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px black;
+    }
+    
+  }
+  
+  .containerLista__wrapperButton{
+    display: flex;
+    justify-content: center;
+  }
+}
+  
+.containerItem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  background: #0bcdff;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin: 20px;
+  transition: all 200ms;
+  &:hover{
+    box-shadow: 10px 10px 10px gray;
+  }
+}
+
+
+.containerBuscador {
+  display: flex;
+  justify-content: center;
+  input[type=search],
+  button{
+    padding: 10px;
+    font-size: 16px;
+    height: 50px;
+  }
+}
+
+
+
+.containerBuscador input[type=search]{
+  border: 1px solid gray;
+  background: black;
+  color: yellow;
+  border-radius: 6px 0 0 6px;
+}
+
+.containerBuscador button{
+  border: 1px solid gray;
+  border-radius: 0 6px 6px 0 ;
+  cursor: pointer;
+  background: #0bcdff;
+}
+
+.containerLista__wrapperButton__button{
+  margin: 0 auto;
+  padding: 10px;
+  background: #0bcdff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.containerLista__wrapperButton__button:hover{
+  background: gray;
+  color: white;
+}

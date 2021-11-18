@@ -17,8 +17,8 @@ const Lista = () => {
     fetchNextPage()
   }
 
-  return <div className='containerDetalle' data-testid='listaContent'>
-    <div className='containerLista'>
+  return <div className='containerLista' data-testid='listaContent'>
+    <div className='containerLista__content'>
       {
         data.pages.map(p=>{
           return p.results.map(poke=>{
@@ -31,8 +31,8 @@ const Lista = () => {
         })
       }
     </div>
-    <div className='containerButtonLoadMore'>
-      <button className='buttonLoadMore' onClick={handleLoadMore}>Cargar más...</button>
+    <div className='containerLista__wrapperButton'>
+      <button className='containerLista__wrapperButton__button' onClick={handleLoadMore}>Cargar más...</button>
     </div>
   </div>
 }
